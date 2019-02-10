@@ -140,5 +140,5 @@ class CNNHelper(object):
         return x, y
 
 
-plot_data()
+# plot_data()
 helper = CNNHelper()
