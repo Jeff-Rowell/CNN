@@ -259,7 +259,7 @@ class CNN(object):
         with tf.Session() as sess:
             sess.run(tf.global_variables_initializer())
 
-            for i in range(500):
+            for i in range(1250):
                 batch = helper.get_batch(100)
                 sess.run(train, feed_dict={self.x: batch[0], self.y_true: batch[1], self.hold_prob: 0.5})
 
